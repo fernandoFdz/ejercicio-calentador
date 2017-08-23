@@ -1,7 +1,9 @@
 public class calentador{
     public int temperatura;
+    public int incremento;
         public void estandar(){
             temperatura=15;
+            incremento=3;
         }
         
         public int sube(){
