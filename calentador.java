@@ -7,13 +7,16 @@ public class calentador{
         }
         
         public int sube(){
-            temperatura = temperatura + 5;
+            if(temperatura < 30){
+            temperatura = temperatura + incremento;
+        }
             return temperatura;
         } 
         
         public int baja(){
-            temperatura = temperatura -5;
-            return temperatura;
+            if (temperatura > -10){
+            temperatura = temperatura - incremento;
+            }return temperatura;
         }
         
         public int muestra(){
