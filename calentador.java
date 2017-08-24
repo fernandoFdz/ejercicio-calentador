@@ -1,10 +1,10 @@
 public class calentador{
     private int temperatura;
-    private int incremento;
+    public int incremento;
     private int min;
     private int max;
         public void estandar(){
-            temperatura=15;
+            temperatura=10;
             incremento=3;
             min=0;
             max=40;
@@ -25,5 +25,13 @@ public class calentador{
         
         public int muestra(){
             return temperatura;
+        }
+        
+        public void modificarIncremento(){
+            
+            if(incremento <0){
+            incremento=incremento*(-1);
+            }
+            incremento = 2;
         }
     }
